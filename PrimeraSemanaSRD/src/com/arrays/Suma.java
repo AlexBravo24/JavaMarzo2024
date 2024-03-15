@@ -64,9 +64,9 @@ public class Suma extends JFrame implements ActionListener, KeyListener{
     }
     
     public void habilitarBoton(){
-        String chizuru=txt.getText().trim();
-        String ruka=txt2.getText().trim();
-        if(chizuru.isEmpty() | ruka.isEmpty()){
+        String s=txt.getText().trim();
+        String s2=txt2.getText().trim();
+        if(s.isEmpty() | s2.isEmpty()){
             btn.setEnabled(false);
         }else{
             btn.setEnabled(true);
