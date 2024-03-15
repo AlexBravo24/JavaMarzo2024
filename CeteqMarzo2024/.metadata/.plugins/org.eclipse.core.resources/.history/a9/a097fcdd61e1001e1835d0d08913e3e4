@@ -1,0 +1,42 @@
+package com.ciclos;
+import java.util.Scanner;
+
+
+public class Palindromo {
+ 
+    public static void main(String[] args) {
+         
+        Scanner sn = new Scanner(System.in);
+        sn.useDelimiter("\n");
+         
+        // Pedimos una cadena y la convertimos a minisculas
+        System.out.println("Escribe una cadena");
+        String cadena = sn.next().toLowerCase();
+         
+        String cadenaInvertida = invertirCadena(cadena);
+         
+        // Comprobamos si es palindromo o no
+        if(cadena.equals(cadenaInvertida)){
+            System.out.println("Es palindromo");
+        }else{
+            System.out.println("No es palindromo");
+        }
+         
+    }
+     
+    public static String invertirCadena(String cadena){
+         
+        cadena = cadena.toLowerCase();
+        String cadenaInvertida = "";
+         
+        // Invertimos la cadena
+        char caracter;
+        for (int i = cadena.length() - 1; i >= 0; i--) {
+            caracter = cadena.charAt(i);
+            cadenaInvertida += caracter;
+        }
+         
+        return cadenaInvertida;
+    }
+     
+}

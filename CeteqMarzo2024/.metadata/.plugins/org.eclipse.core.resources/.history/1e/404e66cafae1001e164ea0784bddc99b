@@ -1,0 +1,26 @@
+package com.arrays;
+
+public class Arrays4_JRGG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+//		4. Dado un array de números de 5 posiciones con los siguientes valores:
+//		{1,2,3,4,5}. Guardar los valores de este array en otro array distinto pero con 
+//		los valores invertidos, es decir, que el segundo array deberá tener los valores 
+//		{5,4,3,2,1}
+		int[] valor1 = { 1, 2, 3, 4, 5 };
+		int[] valor2 = new int[4];
+
+	    for (int i = 0; i < valor1.length; i++) {
+	        valor2[i] = valor1[valor1.length - 1 - i];
+	    }
+	    
+	    System.out.print("Valores invertidos: ");
+	    for (int i = 0; i < valor2.length; i++) {
+	        System.out.print(valor2[i] + " ");
+	    }
+
+	}
+
+}
