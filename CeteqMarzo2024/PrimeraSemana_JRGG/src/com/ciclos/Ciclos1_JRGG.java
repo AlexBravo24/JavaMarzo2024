@@ -1,0 +1,15 @@
+package com.ciclos;
+
+public class Ciclos1_JRGG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		//.- Programa un algoritmo que realice la tabla de multiplicar del 12
+		for (int i = 0; i <= 10; i++) {
+			System.out.println("12x"+i+"="+(12*i));
+			
+		}
+
+	}
+
+}
