@@ -1,0 +1,33 @@
+package com;
+
+public class EstructurasCondicionales {
+	public static void main (String [] args) {
+		//Ccondicionales
+		//Estructuras de decision que evualuan valores boleanos
+		
+		//si se cumple esto se ejecuta este bloque si nno se ejecuta este otro bloque
+		int x = 9;
+		
+		
+		
+//		if(x<9) {
+//			System.out.println("si");
+//		}else {
+//			System.out.println("no");
+//		}
+//			
+		
+		//CONDICIONES COMPUESTAS
+		
+		//AND - && DEVUELVA EL BLOQUE O VALOR TRUE CUANDO SE CUMPLEN TODAS LAS CONDICIONES
+		
+		if(x>1 && x<10) {
+			System.out.println("si");
+		}else {
+			System.out.println("no");
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.arrays;
+
+public class Arrays4_JRGG {
+
+	public static void main(String[] args) {
+	    // Array original
+	    int[] valor = { 1, 2, 3, 4, 5 };
+
+	    // Invertir los valores del array original en su lugar e imprimir los valores invertidos
+	    System.out.print("Valores invertidos: ");
+	    for (int i = 0; i < valor.length / 2; i++) {
+	        int temp = valor[i];
+	        valor[i] = valor[valor.length - 1 - i];
+	        valor[valor.length - 1 - i] = temp;
+
+	        // Imprimir el valor invertido
+	        System.out.print(valor[i] + " ");
+	    }
+	}
+
+
+}
