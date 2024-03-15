@@ -1,0 +1,40 @@
+package com.ciclos;
+
+public class Ciclos5_JRGG {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+//		5. Una persona desea invertir $1000.00 en un banco, el cual le otorga un 2% 
+//		de interés mensual. ¿Cuál será la cantidad de dinero que esta persona 
+//		tendrá al cabo de un año si todo el dinero lo reinvierte?
+		
+//		double invertido = 1000;
+//		double sumainvertido = 0;
+//		double totalinvertido = 0;
+//		System.out.println("programa iniciado");
+//		int mes = 1;
+//		while(mes<=12) {
+//			sumainvertido = invertido*0.2;
+//			
+//			sumainvertido = sumainvertido + invertido;
+//			
+//			totalinvertido = totalinvertido + sumainvertido;
+//			
+//			System.out.println("mes " + mes + " " + sumainvertido);
+//			
+//			mes++;
+//			
+//		}
+//		System.out.println(totalinvertido);
+//	
+		double invertido = 1000;
+		double total = 0;
+		for (int i = 0; i < 12; i++) {
+			total = invertido+(invertido*0.2);
+			System.out.println(total);
+		}
+		
+
+	}
+
+}
